@@ -34,7 +34,7 @@ using namespace std;
 /*
 * Definition
 */
-#define DEBUG
+//define DEBUG
 
 #define RASPI
 #define CAM_INDEX					0
@@ -322,7 +322,7 @@ Mat pre_Process(Mat frameORG)
 	inRange(frameHSV, Scalar(hsv.H_min, hsv.S_min, hsv.V_min), Scalar(hsv.H_max, hsv.S_max, hsv.V_max), frameThresh);
 	//inRange(frameHSV, Scalar(0, 192, 144), Scalar(179, 255, 255), frameThresh);
 #else
-	inRange(frameHSV, Scalar(0, 192, 144), Scalar(179, 255, 255), frameThresh);
+	inRange(frameHSV, Scalar(28, 29, 73), Scalar(61, 255, 255), frameThresh);
 #endif
 
 	// Morphological Opening
